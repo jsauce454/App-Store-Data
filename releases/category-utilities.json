@@ -1,7 +1,13 @@
 {
   "category": "Utilities",
-  "count": 3,
+  "count": 4,
   "apps": [
+    {
+      "name": "Calculator",
+      "description": "Calculator - written for T-Embed",
+      "version": "1.0.0",
+      "slug": "BruceDevices/firmware/Calculator"
+    },
     {
       "name": "Flashlight",
       "description": "Simple multi-colour flashlight",

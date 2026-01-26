@@ -1,6 +1,12 @@
 {
-  "count": 6,
+  "count": 7,
   "apps": [
+    {
+      "name": "Calculator",
+      "description": "Calculator - written for T-Embed",
+      "version": "1.0.0",
+      "slug": "BruceDevices/firmware/sd_files/interpreter/Calculator"
+    },
     {
       "name": "Device Info",
       "description": "Device information display showing hardware details and memory statistics",

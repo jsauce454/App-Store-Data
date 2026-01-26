@@ -1,6 +1,6 @@
 {
   "totalCategories": 4,
-  "totalApps": 6,
+  "totalApps": 7,
   "categories": [
     {
       "name": "Audio",
@@ -20,7 +20,7 @@
     {
       "name": "Utilities",
       "slug": "utilities",
-      "count": 3
+      "count": 4
     }
   ]
 }
