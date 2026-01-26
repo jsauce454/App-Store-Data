@@ -125,7 +125,7 @@ async function main() {
         
         // Filter out unwanted fields from apps for category files
         const filteredApps = apps.map(app => {
-            const { commit, owner, repo, path, filePath, category, ...cleanApp } = app;
+            const { commit, owner, repo, path, filePath, category, files, ...cleanApp } = app;
             // Add slug in format: owner/repo/appname
             cleanApp.slug = `${owner}/${repo}/${app.name}`;
             return cleanApp;
