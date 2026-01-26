@@ -1,0 +1,48 @@
+name: Generate Release Files
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate-releases:
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Generate release files
+        run: |
+          node scripts/generate-releases.js
+
+      - name: Commit and push release files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if [ -d "releases" ] && [ "$(ls -A releases 2>/dev/null)" ]; then
+            git add releases/
+            if git diff --staged --quiet; then
+              echo "No changes to commit"
+            else
+              git commit -m "Update release files [skip ci]"
+              git push
+            fi
+          else
+            echo "No release files to commit"
+          fi
