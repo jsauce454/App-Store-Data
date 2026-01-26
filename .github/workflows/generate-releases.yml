@@ -25,7 +25,7 @@ jobs:
 
       - name: Generate release files
         run: |
-          node scripts/generate-releases.js
+          node .scripts/generate-releases.js
 
       - name: Commit and push release files
         run: |

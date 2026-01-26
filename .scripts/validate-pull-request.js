@@ -362,7 +362,7 @@ async function validateMetadata(filePath, dir) {
 }
 
 // Function to manage PR labels
-async function managePRLabels(hasMetadataIssues, hasMissingMetadata, hasInvalidMetadata, hasMissingLogo, validationSuccess) {
+async function managePRLabels(hasMetadataIssues, hasMissingMetadata, hasInvalidMetadata, hasMissingLogo, validationSuccess, isExternalContribution) {
     if (process.env.GITHUB_EVENT_NAME !== 'pull_request') {
         return;
     }
@@ -380,7 +380,7 @@ async function managePRLabels(hasMetadataIssues, hasMissingMetadata, hasInvalidM
     }
 
     const [owner, repo] = repository.split('/');
-    const labelsToManage = ['missing metadata.json', 'invalid metadata.json', 'missing logo.png', 'review required'];
+    const labelsToManage = ['missing metadata.json', 'invalid metadata.json', 'missing logo.png', 'review required', 'external contribution'];
 
     try {
         // Get current labels
@@ -440,6 +440,17 @@ async function managePRLabels(hasMetadataIssues, hasMissingMetadata, hasInvalidM
         } else {
             if (currentLabelNames.includes('review required')) {
                 labelsToRemove.push('review required');
+            }
+        }
+
+        // Manage 'external contribution' label
+        if (isExternalContribution) {
+            if (!currentLabelNames.includes('external contribution')) {
+                labelsToAdd.push('external contribution');
+            }
+        } else {
+            if (currentLabelNames.includes('external contribution')) {
+                labelsToRemove.push('external contribution');
             }
         }
 
@@ -673,6 +684,41 @@ async function main() {
     let metadataFound = false;
     let hasInvalidMetadata = false;
     let hasMissingLogo = false;
+    let isExternalContribution = false;
+
+    // Check if this is an external contribution
+    if (process.env.GITHUB_EVENT_NAME === 'pull_request' && process.env.GITHUB_EVENT_PATH) {
+        try {
+            const eventData = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
+            const prAuthor = eventData.pull_request.user.login;
+            
+            console.log(`🔍 Checking contribution type - PR Author: ${prAuthor}`);
+            
+            // Extract owners from changed metadata files
+            const repositoryOwners = new Set();
+            for (const { directory } of metadataDirectories) {
+                const pathParts = directory.split(path.sep);
+                const repoIndex = pathParts.indexOf('repositories');
+                if (repoIndex >= 0 && pathParts.length > repoIndex + 1) {
+                    const owner = pathParts[repoIndex + 1];
+                    repositoryOwners.add(owner);
+                    console.log(`  - Found repository owner: ${owner}`);
+                }
+            }
+            
+            // Check if PR author is not one of the repository owners
+            if (repositoryOwners.size > 0 && !repositoryOwners.has(prAuthor)) {
+                isExternalContribution = true;
+                console.log(`  - ✅ External contribution detected: ${prAuthor} is not in [${Array.from(repositoryOwners).join(', ')}]`);
+            } else if (repositoryOwners.has(prAuthor)) {
+                console.log(`  - ℹ️ Author contribution: ${prAuthor} is the repository owner`);
+            } else {
+                console.log(`  - ⚠️ Could not determine repository owners from folder structure`);
+            }
+        } catch (error) {
+            console.log(`  - ⚠️ Could not check contribution type: ${error.message}`);
+        }
+    }
 
     console.log('📂 Processing changed metadata.json files...');
     console.log('');
@@ -775,7 +821,7 @@ async function main() {
     }
 
     // Manage PR labels based on validation results
-    await managePRLabels(!validationSuccess, hasMissingMetadata, hasInvalidMetadata, hasMissingLogo, validationSuccess);
+    await managePRLabels(!validationSuccess, hasMissingMetadata, hasInvalidMetadata, hasMissingLogo, validationSuccess, isExternalContribution);
 
     // Post PR comment
     await postPRComment(validationSuccess, allOutput, summary, metadataInfo);
