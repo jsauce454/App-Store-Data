@@ -2,7 +2,7 @@
   "name": "Device Info",
   "description": "Device information display showing hardware details and memory statistics",
   "category": "Tools",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "commit": "fe621cd1bb56bf2f970c15b70fcdeec36a3180de",
   "owner": "emericklaw",
   "repo": "Bruce-Device-Info-App",
