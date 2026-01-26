@@ -1,0 +1,22 @@
+{
+  "lastUpdated": "2026-01-26T00:34:01.525Z",
+  "totalCategories": 3,
+  "totalApps": 5,
+  "categories": [
+    {
+      "name": "Audio",
+      "slug": "audio",
+      "count": 1
+    },
+    {
+      "name": "Tools",
+      "slug": "tools",
+      "count": 1
+    },
+    {
+      "name": "Utilities",
+      "slug": "utilities",
+      "count": 3
+    }
+  ]
+}

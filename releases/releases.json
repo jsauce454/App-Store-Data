@@ -1,0 +1,31 @@
+{
+  "lastUpdated": "2026-01-26T00:34:01.525Z",
+  "count": 5,
+  "apps": [
+    {
+      "name": "Device Info",
+      "version": "1.0.0",
+      "slug": "emericklaw/Bruce-Device-Info-App/Device Info"
+    },
+    {
+      "name": "Flashlight",
+      "version": "1.0.0",
+      "slug": "emericklaw/Bruce-Flashlight-App/Flashlight"
+    },
+    {
+      "name": "Hello World",
+      "version": "1.0.0",
+      "slug": "emericklaw/Bruce-Hello-World-Example-App/Hello World"
+    },
+    {
+      "name": "Lock Device",
+      "version": "1.1.0",
+      "slug": "emericklaw/Bruce-Lock-Device-App/Lock Device"
+    },
+    {
+      "name": "Tone Generator",
+      "version": "1.0.0",
+      "slug": "emericklaw/Bruce-Tone-Generator-App/Tone Generator"
+    }
+  ]
+}
