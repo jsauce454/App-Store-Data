@@ -1,0 +1,13 @@
+{
+  "name": "App Store",
+  "description": "App store for Bruce devices with over-the-air install and updates for scripts and themes",
+  "category": "Tools",
+  "version": "1.0.0",
+  "commit": "548c65a4b4b9dfcaa4454e2721d52666103d719c",
+  "owner": "BruceDevices",
+  "repo": "App-Store",
+  "path": "/",
+  "files": [
+    "App Store.js"
+  ]
+}
