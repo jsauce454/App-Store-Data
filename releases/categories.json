@@ -1,6 +1,6 @@
 {
-  "totalCategories": 7,
-  "totalApps": 23,
+  "totalCategories": 8,
+  "totalApps": 31,
   "categories": [
     {
       "name": "Audio",
@@ -21,6 +21,11 @@
       "name": "RF",
       "slug": "rf",
       "count": 1
+    },
+    {
+      "name": "Themes",
+      "slug": "themes",
+      "count": 8
     },
     {
       "name": "Tools",

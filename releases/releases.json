@@ -1,5 +1,5 @@
 {
-  "count": 23,
+  "count": 31,
   "apps": [
     {
       "name": "App Store",
@@ -12,6 +12,54 @@
       "description": "Arcade Games for M5 Stick",
       "version": "1.0.0",
       "slug": "BruceDevices/firmware/sd_files/interpreter/Arcade Games"
+    },
+    {
+      "name": "Bruce Theme (GIF)",
+      "description": "A bold, glowing upgrade for your Bruce device with neon energy and shark power.",
+      "version": "1.3.0",
+      "slug": "emericklaw/Bruce-Theme/GIF-240x135px/Bruce Theme (GIF)"
+    },
+    {
+      "name": "Bruce Theme (GIF)",
+      "description": "A bold, glowing upgrade for your Bruce device with neon energy and shark power.",
+      "version": "1.3.0",
+      "slug": "emericklaw/Bruce-Theme/GIF-320x170px/Bruce Theme (GIF)"
+    },
+    {
+      "name": "Bruce Theme (GIF)",
+      "description": "A bold, glowing upgrade for your Bruce device with neon energy and shark power.",
+      "version": "1.3.0",
+      "slug": "emericklaw/Bruce-Theme/GIF-320x240px/Bruce Theme (GIF)"
+    },
+    {
+      "name": "Bruce Theme (GIF)",
+      "description": "A bold, glowing upgrade for your Bruce device with neon energy and shark power.",
+      "version": "1.3.0",
+      "slug": "emericklaw/Bruce-Theme/GIF-480x222px/Bruce Theme (GIF)"
+    },
+    {
+      "name": "Bruce Theme (PNG)",
+      "description": "A bold, glowing upgrade for your Bruce device with neon energy and shark power.",
+      "version": "1.3.0",
+      "slug": "emericklaw/Bruce-Theme/PNG-240x135px/Bruce Theme (PNG)"
+    },
+    {
+      "name": "Bruce Theme (PNG)",
+      "description": "A bold, glowing upgrade for your Bruce device with neon energy and shark power.",
+      "version": "1.3.0",
+      "slug": "emericklaw/Bruce-Theme/PNG-320x170px/Bruce Theme (PNG)"
+    },
+    {
+      "name": "Bruce Theme (PNG)",
+      "description": "A bold, glowing upgrade for your Bruce device with neon energy and shark power.",
+      "version": "1.3.0",
+      "slug": "emericklaw/Bruce-Theme/PNG-320x240px/Bruce Theme (PNG)"
+    },
+    {
+      "name": "Bruce Theme (PNG)",
+      "description": "A bold, glowing upgrade for your Bruce device with neon energy and shark power.",
+      "version": "1.3.0",
+      "slug": "emericklaw/Bruce-Theme/PNG-480x222px/Bruce Theme (PNG)"
     },
     {
       "name": "Calculator",
