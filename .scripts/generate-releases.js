@@ -46,11 +46,13 @@ function getLastCommitTimestampForCategory(category, categorizedApps) {
             return Math.floor(Date.now() / 1000);
         }
 
-        // Get the most recent commit timestamp that touched any file in this category
+        // Get the most recent commit timestamp that actually changed content in each file
         let mostRecentTimestamp = 0;
         for (const filePath of filePaths) {
             try {
-                const gitCommand = `git log -1 --format=%ct --follow -- "${filePath}"`;
+                // Use git log with -p to find commits that actually changed the file content
+                // Skip merge commits with --no-merges to avoid bulk merge timestamps
+                const gitCommand = `git log -1 --format=%ct --follow --no-merges -- "${filePath}"`;
                 const result = execSync(gitCommand, {
                     encoding: 'utf8',
                     stdio: 'pipe',
@@ -62,6 +64,23 @@ function getLastCommitTimestampForCategory(category, categorizedApps) {
                     console.log(`📅 File ${filePath}: timestamp ${timestamp} (${new Date(timestamp * 1000).toISOString()})`);
                     if (timestamp > mostRecentTimestamp) {
                         mostRecentTimestamp = timestamp;
+                    }
+                } else {
+                    // If no non-merge commits found, try with merges included but look further back
+                    const fallbackCommand = `git log -2 --format=%ct --follow -- "${filePath}"`;
+                    const fallbackResult = execSync(fallbackCommand, {
+                        encoding: 'utf8',
+                        stdio: 'pipe',
+                        cwd: path.join(__dirname, '..')
+                    }).trim().split('\n').filter(t => t.trim());
+                    
+                    if (fallbackResult.length > 1) {
+                        // Use the second most recent commit to skip the bulk update
+                        const timestamp = parseInt(fallbackResult[1]);
+                        console.log(`📅 File ${filePath}: fallback timestamp ${timestamp} (${new Date(timestamp * 1000).toISOString()})`);
+                        if (timestamp > mostRecentTimestamp) {
+                            mostRecentTimestamp = timestamp;
+                        }
                     }
                 }
             } catch (gitError) {
