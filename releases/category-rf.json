@@ -3,10 +3,10 @@
   "count": 1,
   "apps": [
     {
-      "name": "RF Bruce Force",
+      "name": "RF Brute Force",
       "description": "Brute force RF signals",
       "version": "1.0.1",
-      "slug": "BruceDevices/firmware/RF Bruce Force"
+      "slug": "BruceDevices/firmware/RF Brute Force"
     }
   ]
 }

@@ -3,10 +3,10 @@
   "count": 2,
   "apps": [
     {
-      "name": "IR Bruce Force",
+      "name": "IR Brute Force",
       "description": "Brute force IR remote control codes",
       "version": "1.0.1",
-      "slug": "BruceDevices/firmware/IR Bruce Force"
+      "slug": "BruceDevices/firmware/IR Brute Force"
     },
     {
       "name": "IR2Keyboard",

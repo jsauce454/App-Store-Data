@@ -3,10 +3,10 @@
   "count": 1,
   "apps": [
     {
-      "name": "WiFi Bruce Force",
+      "name": "WiFi Brute Force",
       "description": "Brute force WiFi network password with dictionary attack",
       "version": "1.0.1",
-      "slug": "BruceDevices/firmware/WiFi Bruce Force"
+      "slug": "BruceDevices/firmware/WiFi Brute Force"
     }
   ]
 }
