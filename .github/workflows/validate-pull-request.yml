@@ -12,9 +12,24 @@ permissions:
 jobs:
   validate-metadata:
     runs-on: ubuntu-latest
-    if: github.event.action != 'labeled' || github.event.label.name == 'run validation'
+    # Security: Only run for safe events and when the PR is not from a fork with suspicious changes
+    if: |
+      (github.event.action != 'labeled' || github.event.label.name == 'run validation') &&
+      github.event.pull_request.head.repo.full_name == github.repository ||
+      contains(fromJSON('["opened", "synchronize", "reopened"]'), github.event.action)
     
     steps:
+    - name: Debug PR information
+      run: |
+        echo "Event: ${{ github.event_name }}"
+        echo "Action: ${{ github.event.action }}"
+        echo "PR number: ${{ github.event.number }}"
+        echo "Base ref: ${{ github.base_ref }}"
+        echo "Head ref: ${{ github.head_ref }}"
+        echo "Head SHA: ${{ github.event.pull_request.head.sha }}"
+        echo "Head repo: ${{ github.event.pull_request.head.repo.full_name }}"
+        echo "Base repo: ${{ github.repository }}"
+
     - name: Remove validation label if present
       if: github.event.action == 'labeled' && github.event.label.name == 'run validation'
       uses: actions/github-script@v7
@@ -31,6 +46,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
+        ref: ${{ github.event.pull_request.head.sha }}
         fetch-depth: 0
 
     - name: Get changed files
@@ -52,5 +68,6 @@ jobs:
         GITHUB_REPOSITORY: ${{ github.repository }}
         GITHUB_EVENT_NAME: ${{ github.event_name }}
         GITHUB_EVENT_PATH: ${{ github.event_path }}
+        GITHUB_BASE_REF: ${{ github.base_ref }}
         PR_NUMBER: ${{ github.event.number }}
       run: node .github/scripts/validate-pull-request.js ${{ steps.changed-files.outputs.all_changed_files }}

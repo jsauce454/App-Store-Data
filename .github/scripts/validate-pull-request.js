@@ -475,8 +475,12 @@ async function validateMetadata(filePath, dir, prAuthor) {
 
     if (!hasErrors) {
         console.log(`    - 🔍 Checking version history...`);
-        // Try to get the previous version from main branch
-        const previousContent = gitCommand(`git show origin/main:"${filePath}"`) || gitCommand(`git show main:"${filePath}"`);
+        // Try to get the previous version from base branch
+        const baseBranch = process.env.GITHUB_BASE_REF || 'main';
+        const previousContent = gitCommand(`git show origin/${baseBranch}:"${filePath}"`) || 
+                               gitCommand(`git show ${baseBranch}:"${filePath}"`) ||
+                               gitCommand(`git show origin/main:"${filePath}"`) || 
+                               gitCommand(`git show main:"${filePath}"`);
         console.log(`      - 🔍 Current version: ${metadata.version}`);
         
         if (previousContent) {
@@ -830,7 +834,11 @@ ${comment.body}
 // Main validation logic
 async function main() {
     // Get actual changed files from git
-    const changedFiles = gitCommand('git diff --name-only HEAD~1 HEAD') || gitCommand('git diff --name-only origin/main HEAD');
+    // For pull_request_target, we need to compare against the base branch
+    const baseBranch = process.env.GITHUB_BASE_REF || 'main';
+    const changedFiles = gitCommand(`git diff --name-only origin/${baseBranch}...HEAD`) || 
+                        gitCommand(`git diff --name-only ${baseBranch}...HEAD`) ||
+                        gitCommand('git diff --name-only HEAD~1 HEAD');
     
     if (!changedFiles) {
         console.log('No changed files detected');
