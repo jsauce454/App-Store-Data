@@ -6,7 +6,11 @@
       "name": "RF Brute Force",
       "description": "Brute force RF signals",
       "version": "1.0.1",
-      "slug": "BruceDevices/firmware/WiFi Brute Force"
+      "slug": "BruceDevices/firmware/WiFi Brute Force",
+      "n": "RF Brute Force",
+      "d": "Brute force RF signals",
+      "v": "1.0.1",
+      "s": "BruceDevices/firmware/WiFi Brute Force"
     }
   ]
 }
