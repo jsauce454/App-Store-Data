@@ -12,11 +12,6 @@ permissions:
 jobs:
   validate-metadata:
     runs-on: ubuntu-latest
-    # Security: Only run for safe events and when the PR is not from a fork with suspicious changes
-    if: |
-      (github.event.action != 'labeled' || github.event.label.name == 'run validation') &&
-      github.event.pull_request.head.repo.full_name == github.repository ||
-      contains(fromJSON('["opened", "synchronize", "reopened"]'), github.event.action)
     
     steps:
     - name: Debug PR information
