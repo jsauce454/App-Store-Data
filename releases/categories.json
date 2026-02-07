@@ -1,18 +1,18 @@
 {
   "totalCategories": 8,
-  "totalApps": 32,
+  "totalApps": 34,
   "categories": [
     {
       "name": "Audio",
       "slug": "audio",
-      "count": 2,
-      "lastUpdated": 1770041952
+      "count": 3,
+      "lastUpdated": 1770502344
     },
     {
       "name": "Games",
       "slug": "games",
-      "count": 8,
-      "lastUpdated": 1770041952
+      "count": 9,
+      "lastUpdated": 1770502344
     },
     {
       "name": "Infrared",
