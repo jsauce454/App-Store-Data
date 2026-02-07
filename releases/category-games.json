@@ -1,6 +1,6 @@
 {
   "category": "Games",
-  "count": 8,
+  "count": 9,
   "apps": [
     {
       "name": "Arcade Games",
@@ -35,6 +35,26 @@
       "d": "Car racing game",
       "v": "1.0.1",
       "s": "BruceDevices/firmware/Highway Racer"
+    },
+    {
+      "name": "Magic 8 Ball",
+      "description": "Ask a question, watch it Thinking..., receive a classic Magic 8 Ball answer",
+      "version": "1.14.0",
+      "supported-devices": [
+        "Lilygo T-Embed",
+        "Lilygo T-Embed CC1101",
+        "Smoochiee Board"
+      ],
+      "slug": "SasPes/magic-8-ball/Magic 8 Ball",
+      "n": "Magic 8 Ball",
+      "d": "Ask a question, watch it Thinking..., receive a classic Magic 8 Ball answer",
+      "v": "1.14.0",
+      "s": "SasPes/magic-8-ball/Magic 8 Ball",
+      "sd": [
+        "Lilygo T-Embed",
+        "Lilygo T-Embed CC1101",
+        "Smoochiee Board"
+      ]
     },
     {
       "name": "Ping Pong",

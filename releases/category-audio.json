@@ -1,7 +1,17 @@
 {
   "category": "Audio",
-  "count": 2,
+  "count": 3,
   "apps": [
+    {
+      "name": "Cricket",
+      "description": "Cricket.js is an audio app that plays cricket sounds.",
+      "version": "1.0.0",
+      "slug": "sloth632/Cricket-app/Cricket-app",
+      "n": "Cricket",
+      "d": "Cricket.js is an audio app that plays cricket sounds.",
+      "v": "1.0.0",
+      "s": "sloth632/Cricket-app/Cricket-app"
+    },
     {
       "name": "DTMF Tones",
       "description": "Generate DTMF tones",
