@@ -4,14 +4,27 @@
   "category": "theme",
   "version": "1.0.0",
   "commit": "40-character-sha-hash-from-your-repository",
-  "owner": "your-github-username",
-  "repo": "your-repository-name",
-  "path": "/path/to/files/in/your/repo/",
+  "owner": "CreeperRick",
+  "repo": "Cyber_Hacker",
+  "path": "/Cyber_Hacker/",
   "files": [
-    "file1.js",
-    {
-      "source": "file2.js",
-      "destination": "file-two.js"
-    }
+    "Cyber_Hacker.json",
+    "BLE.png",
+    "Clock.png",
+    "Config.png",
+    "Connect.png",
+    "Ethernet.png",
+    "FM.png",
+    "Files.png",
+    "GPS.png",
+    "IR.png",
+    "JSInterpreter.png",
+    "JSInterpreter1.gif",
+    "LoRa.png",
+    "NRF24.png",
+    "Others.png",
+    "RF.png",
+    "RFID.png",
+    "WiFi.png"
   ]
 }
