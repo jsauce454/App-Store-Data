@@ -1,0 +1,17 @@
+{
+  "name": "Cyber_Hacker",
+  "description": "Cool matrix theme",
+  "category": "theme",
+  "version": "1.0.0",
+  "commit": "40-character-sha-hash-from-your-repository",
+  "owner": "your-github-username",
+  "repo": "your-repository-name",
+  "path": "/path/to/files/in/your/repo/",
+  "files": [
+    "file1.js",
+    {
+      "source": "file2.js",
+      "destination": "file-two.js"
+    }
+  ]
+}
