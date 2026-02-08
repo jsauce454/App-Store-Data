@@ -1,0 +1,13 @@
+{
+  "name": "Snake",
+  "description": "simple app that plays NOKIA ringtone,
+  "category": "audio",
+  "version": "1.0.0",
+  "commit": "a4dcf73e754523cd54c0b2fd00c9fdc972126c3b",
+  "owner": "sloth632",
+  "repo": "nokia-app",
+  "path": "/",
+  "files": [
+    "Nokia.js"
+  ]
+}
