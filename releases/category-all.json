@@ -1,6 +1,6 @@
 {
-  "generated": 1770901912,
-  "generatedISO": "2026-02-12T13:11:52.633Z",
+  "generated": 1770902138,
+  "generatedISO": "2026-02-12T13:15:38.158Z",
   "totalCategories": 8,
   "totalApps": 52,
   "categories": [
@@ -322,7 +322,7 @@
           "name": "RF Brute Force",
           "description": "Brute force RF signals",
           "category": "RF",
-          "version": "1.0.2",
+          "version": "1.0.3",
           "commit": "18fe3c2c994c6a276447b2aee84e310c837ccbc4",
           "owner": "BruceDevices",
           "repo": "firmware",
@@ -333,12 +333,12 @@
               "destination": "RF Brute Force.js"
             }
           ],
-          "slug": "BruceDevices/firmware/WiFi Brute Force",
-          "lastUpdated": 1770901796,
-          "metadataPath": "repositories/BruceDevices/firmware/WiFi Brute Force/metadata.json"
+          "slug": "BruceDevices/firmware/RF Brute Force",
+          "lastUpdated": 1770902042,
+          "metadataPath": "repositories/BruceDevices/firmware/RF Brute Force/metadata.json"
         }
       ],
-      "lastUpdated": 1770901796
+      "lastUpdated": 1770902042
     },
     {
       "name": "Themes",
@@ -1419,8 +1419,8 @@
           "name": "WiFi Brute Force",
           "description": "Brute force WiFi network password with dictionary attack",
           "category": "WiFi",
-          "version": "1.0.1",
-          "commit": "c9d3731b38e67598e5b66a6488d8b12aeb8bf4dd",
+          "version": "1.0.3",
+          "commit": "18fe3c2c994c6a276447b2aee84e310c837ccbc4",
           "owner": "BruceDevices",
           "repo": "firmware",
           "path": "/sd_files/interpreter/",
@@ -1430,12 +1430,12 @@
               "destination": "WiFi Brute Force.js"
             }
           ],
-          "slug": "BruceDevices/firmware/RF Brute Force",
-          "lastUpdated": 1769976423,
-          "metadataPath": "repositories/BruceDevices/firmware/RF Brute Force/metadata.json"
+          "slug": "BruceDevices/firmware/WiFi Brute Force",
+          "lastUpdated": 1770902042,
+          "metadataPath": "repositories/BruceDevices/firmware/WiFi Brute Force/metadata.json"
         }
       ],
-      "lastUpdated": 1769976423
+      "lastUpdated": 1770902042
     }
   ]
 }
