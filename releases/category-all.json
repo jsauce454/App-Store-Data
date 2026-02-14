@@ -1,6 +1,6 @@
 {
-  "generated": 1771031389,
-  "generatedISO": "2026-02-14T01:09:49.641Z",
+  "generated": 1771032352,
+  "generatedISO": "2026-02-14T01:25:52.271Z",
   "totalCategories": 8,
   "totalApps": 52,
   "categories": [
@@ -21,9 +21,9 @@
           "files": [
             "Cricket.js"
           ],
-          "slug": "sloth632/Cricket-app",
-          "lastUpdated": 1770500040,
-          "metadataPath": "repositories/sloth632/Cricket-app/metadata.json"
+          "slug": "sloth632/Cricket-app/Cricket",
+          "lastUpdated": 1771032333,
+          "metadataPath": "repositories/sloth632/Cricket-app/Cricket/metadata.json"
         },
         {
           "name": "DTMF Tones",
@@ -56,9 +56,9 @@
           "files": [
             "Nokia.js"
           ],
-          "slug": "sloth632/Nokia-app",
-          "lastUpdated": 1770556404,
-          "metadataPath": "repositories/sloth632/Nokia-app/metadata.json"
+          "slug": "sloth632/Nokia-app/Nokia",
+          "lastUpdated": 1771032333,
+          "metadataPath": "repositories/sloth632/Nokia-app/Nokia/metadata.json"
         },
         {
           "name": "Tone Generator",
@@ -77,7 +77,7 @@
           "metadataPath": "repositories/emericklaw/Bruce-Tone-Generator-App/Tone Generator/metadata.json"
         }
       ],
-      "lastUpdated": 1770556404
+      "lastUpdated": 1771032333
     },
     {
       "name": "Games",
@@ -685,9 +685,9 @@
             "RFID.gif",
             "WiFi.gif"
           ],
-          "slug": "CreeperRick/Cyber_Hacker",
-          "lastUpdated": 1770807915,
-          "metadataPath": "repositories/CreeperRick/Cyber_Hacker/metadata.json"
+          "slug": "CreeperRick/Cyber_Hacker/Cyber Hacker",
+          "lastUpdated": 1771032333,
+          "metadataPath": "repositories/CreeperRick/Cyber_Hacker/Cyber Hacker/metadata.json"
         },
         {
           "name": "Cyberpunk 2077",
@@ -1204,7 +1204,7 @@
           "metadataPath": "repositories/BruceDevices/App-Store-Apps/Watch Dogs 320x170/metadata.json"
         }
       ],
-      "lastUpdated": 1770861456
+      "lastUpdated": 1771032333
     },
     {
       "name": "Tools",
