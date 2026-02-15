@@ -1,6 +1,6 @@
 {
   "category": "Themes",
-  "count": 25,
+  "count": 26,
   "apps": [
     {
       "name": "Bebra First Creation",
@@ -128,6 +128,18 @@
       "d": "Cool matrix theme",
       "v": "1.0.0",
       "s": "CreeperRick/Cyber_Hacker/Cyber Hacker",
+      "sss": "320x170"
+    },
+    {
+      "name": "Cyber Hacker v2",
+      "description": "Cool matrix theme, JS Interpreter menu is called 'Games'",
+      "version": "1.0.0",
+      "supported-screen-size": "320x170",
+      "slug": "CreeperRick/Cyber_Hacker/Cyber Hacker v2",
+      "n": "Cyber Hacker v2",
+      "d": "Cool matrix theme, JS Interpreter menu is called 'Games'",
+      "v": "1.0.0",
+      "s": "CreeperRick/Cyber_Hacker/Cyber Hacker v2",
       "sss": "320x170"
     },
     {
