@@ -7,11 +7,11 @@
   "owner": "CreeperRick",
   "repo": "Theme_Epstein",
   "supported-screen-size": "320x170",
-  "path": "/Theme_Epstein/",
+  "path": "/Theme_Epstein/GIF/",
   "files": [
     {
       "source": "Theme_Epstein.json",
-      "destination": "Epstein.json"
+      "destination": "Epstein GIF.json"
     },
     "BLE.gif",
     "Clock.gif",
