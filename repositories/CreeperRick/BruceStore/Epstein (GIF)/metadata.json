@@ -1,33 +1,33 @@
 {
-  "name": "Cyber Hacker",
-  "description": "Cool matrix theme",
+  "name": "Epstein (GIF)",
+  "description": "Epstein GIF Theme",
   "category": "Themes",
   "version": "1.0.0",
-  "commit": "3d3ef8715765a49265250f809b8064c65b131460",
+  "commit": "c79c9bff4e0beeefd8018cf74a6cc66ac1e6b33f",
   "owner": "CreeperRick",
-  "repo": "Cyber_Hacker",
+  "repo": "BruceStore",
   "supported-screen-size": "320x170",
-  "path": "/Cyber_Hacker/",
+  "path": "/Theme_Epstein/GIF/",
   "files": [
     {
-      "source": "Cyber_Hacker.json",
-      "destination": "Cyber Hacker.json"
+      "source": "Theme_Epstein.json",
+      "destination": "Epstein (GIF).json"
     },
     "BLE.gif",
     "Clock.gif",
     "Config.gif",
     "Connect.gif",
     "Ethernet.gif",
-    "FM.gif",
+    "Radio.gif",
     "Files.gif",
-    "GPS.gif",
+    "Map.gif",
     "IR.gif",
-    "JSInterpreter.gif",
+    "JS.gif",
     "LoRa.gif",
     "NRF24.gif",
     "Others.gif",
     "RF.gif",
     "RFID.gif",
-    "WiFi.gif"
+    "Wifi.gif"
   ]
 }

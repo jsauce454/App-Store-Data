@@ -1,17 +1,17 @@
 {
-  "name": "Cyber Hacker v2",
-  "description": "Cool matrix theme, JS Interpreter menu is called 'Games'",
+  "name": "Cyber Hacker",
+  "description": "Cool matrix theme",
   "category": "Themes",
-  "version": "1.0.0",
-  "commit": "c3209cae9c2c4d7d07553e008c59d83bf0ce221b",
+  "version": "1.0.1",
+  "commit": "7f3c14d24cdd11d98bbaedc12287666777457330",
   "owner": "CreeperRick",
-  "repo": "Cyber_Hacker",
+  "repo": "BruceStore",
   "supported-screen-size": "320x170",
   "path": "/Cyber_Hacker/",
   "files": [
     {
       "source": "Cyber_Hacker.json",
-      "destination": "Cyber Hacker v2.json"
+      "destination": "Cyber Hacker.json"
     },
     "BLE.gif",
     "Clock.gif",
@@ -22,7 +22,7 @@
     "Files.gif",
     "GPS.gif",
     "IR.gif",
-    "JSInterpreter1.gif",
+    "JSInterpreter.gif",
     "LoRa.gif",
     "NRF24.gif",
     "Others.gif",
