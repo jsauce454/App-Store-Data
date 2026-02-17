@@ -1,0 +1,33 @@
+{
+  "name": "Epstein (PNG)",
+  "description": "Epstein PNG Theme",
+  "category": "Themes",
+  "version": "1.0.0",
+  "commit": "b1562b0c252a1ee6aa7ecdd19d34f69b69afd7e8",
+  "owner": "CreeperRick",
+  "repo": "Cyber_Hacker",
+  "supported-screen-size": "320x170",
+  "path": "/Theme_Epstein/PNG/",
+  "files": [
+    {
+      "source": "Theme_Epstein.json",
+      "destination": "Epstein.json"
+    },
+    "BLE.png",
+    "Clock.png",
+    "Config.png",
+    "Connect.png",
+    "Ethernet.png",
+    "Radio.png",
+    "Files.png",
+    "Map.png",
+    "IR.png",
+    "JS.png",
+    "LoRa.png",
+    "NRF24.png",
+    "Others.png",
+    "RF.png",
+    "RFID.png",
+    "WiFi.png"
+  ]
+}

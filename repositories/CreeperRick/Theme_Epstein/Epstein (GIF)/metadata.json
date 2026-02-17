@@ -1,0 +1,33 @@
+{
+  "name": "Epstein (GIF)",
+  "description": "Epstein GIF Theme",
+  "category": "Themes",
+  "version": "1.0.0",
+  "commit": "b1562b0c252a1ee6aa7ecdd19d34f69b69afd7e8",
+  "owner": "CreeperRick",
+  "repo": "Cyber_Hacker",
+  "supported-screen-size": "320x170",
+  "path": "/Theme_Epstein/GIF/",
+  "files": [
+    {
+      "source": "Theme_Epstein.json",
+      "destination": "Epstein GIF.json"
+    },
+    "BLE.gif",
+    "Clock.gif",
+    "Config.gif",
+    "Connect.gif",
+    "Ethernet.gif",
+    "Radio.gif",
+    "Files.gif",
+    "Map.gif",
+    "IR.gif",
+    "JS.gif",
+    "LoRa.gif",
+    "NRF24.gif",
+    "Others.gif",
+    "RF.gif",
+    "RFID.gif",
+    "WiFi.gif"
+  ]
+}
