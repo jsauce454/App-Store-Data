@@ -1,9 +1,9 @@
 {
   "name": "ProtoPirate Bruce",
-  "description": "Car key fob decoder supporting 10 protocols: Kia V0-V4, StarLine, Scher-Khan, Subaru, Fiat V0, Ford V0, Suzuki. Rolling code TX and CRC validation.",
+  "description": "Car key fob decoder with 11 protocols (Kia, Chrysler/Jeep, StarLine, Scher-Khan, Subaru, Fiat, Ford, Suzuki), frequency selection (315/433/868 MHz), rolling code TX.",
   "category": "RF",
-  "version": "2.0.0",
-  "commit": "6afda35469d47f273636aa387ea868db6f4a1c20",
+  "version": "2.1.0",
+  "commit": "7c0689e7398375e69044f018d6e2abf111ee3bbd",
   "owner": "jsauce454",
   "repo": "ProtoPirate-Bruce",
   "path": "/",
