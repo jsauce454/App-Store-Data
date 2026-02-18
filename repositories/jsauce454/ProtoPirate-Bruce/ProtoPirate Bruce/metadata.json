@@ -9,9 +9,6 @@
   "path": "/",
   "supported-devices": "Lilygo T-Embed CC1101",
   "files": [
-    {
-      "source": "ProtoPirate.js",
-      "destination": "ProtoPirate.js"
-    }
+    "ProtoPirate.js"
   ]
 }
