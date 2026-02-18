@@ -1,6 +1,6 @@
 {
   "totalCategories": 8,
-  "totalApps": 55,
+  "totalApps": 56,
   "categories": [
     {
       "name": "Audio",
@@ -23,8 +23,8 @@
     {
       "name": "RF",
       "slug": "rf",
-      "count": 1,
-      "lastUpdated": 1770902136
+      "count": 2,
+      "lastUpdated": 1771432175
     },
     {
       "name": "Themes",
