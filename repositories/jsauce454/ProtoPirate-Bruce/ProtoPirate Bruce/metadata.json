@@ -1,14 +1,21 @@
 {
-  "name": "ProtoPirate",
-  "description": "Car key fob decoder with 11 protocols (Kia, Chrysler/Jeep, StarLine, Scher-Khan, Subaru, Fiat, Ford, Suzuki), frequency selection (315/433/868 MHz), load/save .sub files, rolling code TX.",
+  "name": "protopirate.js",
+  "description": "JavaScript car key fob decoder app (protopirate.js) with multi-protocol support (Kia V0-V4, Ford, Suzuki, StarLine, Scher-Khan, Subaru, Fiat, Chrysler/Jeep), frequency selection, load/save .sub files, rolling code TX, and CRC validation",
   "category": "RF",
-  "version": "2.1.0",
-  "commit": "e2ad557ccc0108f5f4a3f843e839fd8a7ca80640",
+  "version": "2.2.0",
+  "commit": "6d2ac5ba910e8c19d94648ad1f319ad8f47bec0c",
   "owner": "jsauce454",
   "repo": "ProtoPirate-Bruce",
   "path": "/",
   "supported-devices": "Lilygo T-Embed CC1101",
   "files": [
-    "ProtoPirate.js"
+    {
+      "source": "ProtoPirate.js",
+      "destination": "ProtoPirate.js"
+    },
+    {
+      "source": "protopirate.js",
+      "destination": "protopirate.js"
+    }
   ]
 }
